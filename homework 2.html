@@ -1,7 +1,7 @@
 
-     let year = prompt("Введіть кількість років:");
+ let year = prompt("Введіть кількість років:");
 
-if (!isNaN(year) && year >= 0) {
+if (!isNaN(year) && year >= 0 && year === " ") {
     let message;
     if (year % 10 === 1 && year % 100 !== 11) {
         message = year + " рік";
@@ -14,3 +14,4 @@ if (!isNaN(year) && year >= 0) {
 } else {
     alert("Введіть коректне число років.");
 }
+   
